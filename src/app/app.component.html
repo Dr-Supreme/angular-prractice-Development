@@ -1,0 +1,42 @@
+<h1>Written Practice for {{ name }}</h1>
+<p>
+  This practice will be about the development a frontend app for the animal
+  fact API, which documentation is available at
+  https://ghibliapi.vercel.app/#section/Studio-Ghibli-API.
+</p>
+<ng-container *ngFor="let movie of movies">
+  <app-movie-card [movie]="movie"></app-movie-card>
+</ng-container>
+
+<a href="https://ghibliapi.vercel.app/#section/Studio-Ghibli-API"> click me </a>
+
+<app-movie-card><br>hey<br></app-movie-card>
+
+<!-- <ng-container *ngFor="let movie of movies">
+  <div *ngIf= "movie.release_date >= '2000'">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title> {{ movie.title }}:{{ movie.release_date }}</mat-card-title>
+      <mat-card-subtitle>End</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions align="end">
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+</ng-container> -->
+<ng-container *ngFor="let movie of movies">
+  <div *ngIf= "movie.release_date >= '2000'">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title> {{ movie.title }}:{{ movie.release_date }}</mat-card-title>
+      <mat-card-subtitle>End</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions align="end">
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
